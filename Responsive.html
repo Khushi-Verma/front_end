@@ -48,6 +48,12 @@
         #chk{
             position: absolute;
             visibility: hidden;
+            z-index:-10;
+        }
+        @media(max-width: 800px){
+            .show-btn, .hide-btn{
+                display: block;
+            }
         }
 
     </style>
@@ -65,7 +71,7 @@
             <li> <a href="#">Contact</a></li>
             <li> <a href="#">About</a></li>
             <li> <a href="#">Services</a></li>
-            <label for="chk" class="show-btn">
+            <label for="chk" class="hide-btn">
                 <i class="fa fa-times"></i>
             </label>
         </ul>
