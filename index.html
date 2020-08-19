@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khushi Verma</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding:0;margin:0;box-sizing:border-box;
+        }
+        .header{
+            width:100%;
+            height: 100px;
+            background-color:cornsilk;
+            padding:0 20px;
+            position:fixed;
+            top:0%;
+        }
+        .header h2{
+            line-height: 100px;
+            float:left;
+            color:black;
+            font-size: medium;
+            text-transform: uppercase;
+        }
+        .header .menu{
+            float:right;
+            list-style: none;
+        }
+        .menu li{
+            display: inline-block;
+            line-height: 100px;
+        }
+        .menu li a{
+            text-decoration: none;
+            color:black;
+            font-size: medium;
+            text-transform: uppercase;
+            padding:0px 20px;
+            display: inline-block;
+        }
+        .main{
+            background-color: darkblue;
+            width: 100px;
+            height:100px;
+
+        }
+        .show-btn, .hide-btn{
+            font-size: 30px;
+            color:black;
+            line-height:100px;
+            display:none;
+        }
+        .show-btn{
+            float:right;
+        }
+        #chk{
+            position: absolute;
+            visibility: hidden;
+            z-index:-10;
+        } @media(max-width: 800px){
+            .show-btn, .hide-btn{
+                display: block;
+            }
+            .menu{
+                position: fixed;
+                top:0;
+                right: -100%;
+                width:100%;
+                height: 100vh;
+                background-color:cornsilk;
+                text-align: center;
+                padding:80px 0;
+                transition: .7s;
+                line-height: normal;
+            }
+            #chk:checked ~ .menu{
+                right:0;
+            }
+        }
+        .main{
+            width: 100%;
+            height: 1000%;
+            background-color: darkblue;
+
+        }
+        .main{
+          background-color: darkblue;
+            height: 550px;
+        }
+       .heading{
+           font-size: 60px;
+           color: white;
+           position: absolute;
+           top: 120px;
+           left: 25px;
+           z-index: 0;
+       }
+        .paragraph{
+            font-size: 50px;
+            color: black;
+            text-align: left;
+            font-style: normal;
+            margin-top: 100px;
+            margin-left: 25px;
+
+        }
+        .button{
+            text-align: center;
+            padding:100px 50px;
+        }
+        .image{
+            float:right;
+            margin-top: 45px;
+            padding: 20px 10px;
+
+        }
+        .footer{
+            padding: 30px;
+            text-align: center;
+            background: cornsilk;
+            height: 60px;
+            width: 98%;
+            margin-left: 1%;
+            color: black;
+        }
+        .btn{
+            padding: 20px 40px;
+            background-color: darkblue;
+            border: 5px solid cornsilk;
+        }
+        .para{
+            color: white;
+            font-style: inherit;
+
+        }
+      
+    </style>
+</head>
+<body>
+   <section>
+       <div class="header">
+           <h2>khushiverma;</h2>
+           <input type="checkbox" id="chk">
+           <label for="chk" class="show-btn">
+               <i class="fa fa-bars"></i>
+           </label>
+           <div class="menu">
+               <ul>
+                   <li> <a href="#">About</a></li>
+                   <li> <a href="#">Content</a></li>
+                   <li> <a href="#">Favorites</a></li>
+                   <li> <a href="#">Contact</a></li>
+                   <li> <a href="#"><i class="fa fa-github"></i></a><li>
+                   <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                   <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                   <label for="chk" class="hide-btn">
+                       <i class="fa fa-times"></i>
+                   </label>
+               </ul>
+           </div>
+       </div>
+   </section>
+   <div class="main">
+       <section class="heading">Every code has there journey </br>This is mine.</section>
+       <section class="image"><img src="blog%20(2).jpg"></section>
+   </div>
+   <div class="paragraph">
+      <p>Hey, I’m Khushi. I’m an Indian software engineer
+          living and working in India. I love creating
+          designs, writing blogs, and writing quotes.</p>
+  </div>
+    <div class="button">
+        <button type=button class="btn"><span class="para">Learn More</span></button>
+    </div>
+
+   <div class="footer">
+       <div class="top1">
+           <div>&copy; KhushiVerma-2020</div>
+       </div>
+   </div>
+
+</body>
+</html>
